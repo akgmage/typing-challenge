@@ -17,6 +17,7 @@ export class AppComponent {
     this.enteredText = target.value;
   }
   
+  // Returns a String value which is then assigned to the class 
   compare(randomLetter: string, enteredLetter: string) {
     if(!enteredLetter) {
       return 'pending';
