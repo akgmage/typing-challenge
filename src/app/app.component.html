@@ -4,9 +4,9 @@
       <h1 class="title has-text-centered">Typing challenge</h1>
 
       <p class="has-text-centered">
-        <span *ngFor="let letter of randomText.split('')">
-          {{ letter }}
-        </span>
+        <span [class]="compare(letter, enteredText[i])"
+        *ngFor="let letter of randomText.split(''); let i = index;"
+        >{{ letter }}</span>
       </p>
 
       <div class="field">
