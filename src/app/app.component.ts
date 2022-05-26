@@ -17,5 +17,12 @@ export class AppComponent {
     this.enteredText = target.value;
   }
   
+  compare(randomLetter: string, enteredLetter: string) {
+    if(!enteredLetter) {
+      return 'pending';
+    }
+    return enteredLetter === randomLetter ? 'correct' :  'incorrect';
+  }
+  
 
 }
