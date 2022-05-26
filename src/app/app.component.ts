@@ -18,6 +18,11 @@ export class AppComponent {
   }
   
   // Returns a String value which is then assigned to the class 
+  // There are three outcomes in total pending, correct and incorrect
+  // pending : user has not yet typed the string
+  // correct : user has typed the letter correctly
+  // incorrect : user has not typed the letter correctly
+
   compare(randomLetter: string, enteredLetter: string) {
     if(!enteredLetter) {
       return 'pending';
