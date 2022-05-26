@@ -5,6 +5,8 @@
 
       <p class="has-text-centered">
         <!--Set the class property using some code :)-->
+        <!--The split() method splits a string into an array of substrings-->
+        <!-- *ngFor with an index : let i = index; we can refer to variable i inside span element -->
         <span [class]="compare(letter, enteredText[i])"
         *ngFor="let letter of randomText.split(''); let i = index;"
         >{{ letter }}</span>
